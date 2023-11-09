@@ -28,13 +28,18 @@ function deleteElementById(index) {
   
   return (
 	  <>
-	  	  <h1>ToDos</h1>
+	  	  <h1 className="display-1 toDos">ToDos</h1>
+		  <div className="contenedor">
 		  <div className="input-group mb-3">
-			  <label></label>
-				<input placeholder="What needs to be done?" onKeyDown={(e) => (e.keyCode === 13 ? cambiarElement(e) : null)} value={input} type="text" onChange={cambioDeImput} className="form-control" aria-describedby="basic-addon1"/>
+			<label></label>
+			<input className="elInput" placeholder="What needs to be done?" onKeyDown={(e) => (e.keyCode === 13 ? cambiarElement(e) : null)} value={input} type="text" onChange={cambioDeImput} />
 		  </div>
-		  {elements.map( (element, index ) => <p id={index} key={index}> {element} <button onClick={() => deleteElementById(index)}>Delete</button></p>)}
-		  <p>{elements.length} items left</p>
+		  {elements.map( (element, index ) => 
+		  <div className="position-relative contenedorDo">
+		  <p className="does ms-0 border-top" id={index} key={index}> {element}</p> <button className="position-absolute top-50 end-0 translate-middle-y me-2 deleteBoton" onClick={() => deleteElementById(index)}>Delete</button>
+		  </div>)}
+		  <p className="border-top footer">{elements.length} items left</p>
+		  </div>
 	  </>
   );
 };
