@@ -4,6 +4,7 @@ body{
 
 .elInput{
 border: none;
+outline: none;
 }
 
 .toDos{
@@ -13,6 +14,7 @@ border: none;
     font-size: 100px;
 }
 
+
 .container{
     background: white;
 }
@@ -21,6 +23,14 @@ border: none;
     padding-inline-start: 60px;
     padding-top: 1%;
 
+}
+
+.contenedorDo{
+    color:#616461e8;
+}
+
+.contenedorDo:hover .deleteBoton{
+    display: block;
 }
 
 input{
@@ -36,16 +46,21 @@ input{
 .contenedor {
     width: 70%;
     margin: 0 auto;
-    box-shadow: 0px 10px 30px black;
+    box-shadow: 10px 5px 20px #8080807a;
+}
   
-    .does:hover .deleteBoton {
-      display: block;
-    }
-  
-    .deleteBoton {
-      display: none;
-    }
-  }
+.deleteBoton {
+    display: none;
+    border: none;
+    background-color: white;
+    color:#36353557;
+    padding-top: 5px;
+}
+
+.deleteBoton:hover{
+    color: #d4111157;
+}
+
 
 p{
     background: white;
@@ -54,6 +69,16 @@ p{
 .footer{
     font-size: 20px;
     padding: 10px;
-    color:#36353557
+    color:#36353557;
+    z-index: 0;
 }
 
+.footer1{
+    font-size: 20px;
+    padding: 10px;
+    color: #36353557;
+    margin: 0 auto;
+    width: 65%;
+    margin-top: -55px;
+    z-index: 1;
+}
