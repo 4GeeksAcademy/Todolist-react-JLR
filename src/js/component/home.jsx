@@ -28,7 +28,7 @@ function deleteElementById(index) {
   
   return (
 	  <>
-	  	  <h1 className="display-1 toDos">ToDos</h1>
+	  	  <h1 className="display-1 toDos mb-5">ToDos</h1>
 		  <div className="contenedor">
 		  <div className="input-group mb-3">
 			<label></label>
@@ -40,9 +40,11 @@ function deleteElementById(index) {
   		  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
 		  </svg></button>
 		  </div>)}
-		  <p className="border-top footer">{elements.length} items left</p>
+		  <p className="border-top border-bottom footer">{elements.length} items left</p>
 		  </div>
-		  
+		  <p className="border footer1">{elements.length} items left</p>
+		  <p className="border footer2">{elements.length} items left</p>
+
 	  </>
   );
 };

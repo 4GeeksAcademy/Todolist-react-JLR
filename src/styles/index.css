@@ -12,6 +12,7 @@ outline: none;
     justify-content: space-around;
     color: #36353557;
     font-size: 100px;
+    
 }
 
 
@@ -46,7 +47,7 @@ input{
 .contenedor {
     width: 70%;
     margin: 0 auto;
-    box-shadow: 10px 5px 20px #8080807a;
+    box-shadow: 10px 3px 50px #808080;
 }
   
 .deleteBoton {
@@ -69,8 +70,9 @@ p{
 .footer{
     font-size: 20px;
     padding: 10px;
-    color:#36353557;
-    z-index: 0;
+    color: #36353557;
+    position: relative;
+    z-index: 1;
 }
 
 .footer1{
@@ -78,7 +80,19 @@ p{
     padding: 10px;
     color: #36353557;
     margin: 0 auto;
-    width: 65%;
-    margin-top: -55px;
+    width: 68%;
+    margin-top: -50px;
     z-index: 1;
 }
+
+
+.footer2{
+    font-size: 20px;
+    padding: 10px;
+    color: #36353557;
+    margin: 0 auto;
+    width: 69%;
+    margin-top: -60px;
+    z-index: 2;
+}
+
